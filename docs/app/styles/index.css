@@ -1,0 +1,43 @@
+html, body {
+	min-width: 100%;
+	min-height: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../images/pattern.svg');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*solution for removing a white space on the right side, on smaller devices */
+/* first part was based on: 
+http://stackoverflow.com/questions/16410659/bootstrap-removing-padding-or-margin-when-screen-size-is-smaller */ 
+@media (max-width: 978px) {
+	.container-fluid {
+		padding: 0;
+		margin: 0;
+	}
+	/* second:
+		http://stackoverflow.com/questions/16704893/twitter-bootstrap-white-gap-on-right-side-of-page
+	*/	
+	.row {
+		padding-right: 0;
+		margin-right: 0;
+		padding-left: 0;
+		margin-left: 0;
+	}
+}
+
+/* removing default bootstrap list left side styling*/
+ul,
+ul li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+

@@ -1,7 +1,7 @@
 {
   "name": "wiki",
   "version": "1.0.0",
-  "description": "A wikipedia viewer based on the FabMob API",
+  "description": "A wiki viewer based on the FabMob API",
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
